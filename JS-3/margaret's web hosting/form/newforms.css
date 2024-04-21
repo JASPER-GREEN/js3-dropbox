@@ -1,0 +1,301 @@
+body{
+
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+}
+
+
+.container-form{
+    text-align: center;
+    width: 65%;
+    background-color: lightblue;
+    background-image: url(images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+}
+
+
+/* here is my label: */ 
+    label{
+    color: black;
+}
+
+input[type=text]{
+    width: 60%;
+    padding: 12px;
+    border-radius: 7px;
+    border: 2px solid gray ;
+    background-color: transparent;
+    /* color: red; */
+}
+
+/* The inside of the box when clicked: FOCUS */
+input[type=text]:focus{
+font-size: 15px;
+outline: none;
+color: red;
+}
+
+::placeholder{
+    font-size: 15px;
+    color: rgb(1, 66, 44);
+    /* text-align: center; */
+    text-transform: capitalize;
+}
+
+
+/* here is email design */
+input[type=email]{
+    width: 60%;
+    padding: 12px;
+    border-radius: 7px;
+    border: 2px solid gray ;
+    background-color: transparent;
+    
+}
+
+/* The inside of the box when clicked: FOCUS */
+input[type=email]:focus{
+    font-size: 15px;
+    outline: none;
+    color: red;
+
+    }
+    
+
+    /* here is my telephone design */
+    input[type=tel]{
+        width: 60%;
+        padding: 12px;
+        border-radius: 7px;
+        border: 2px solid gray ;
+        background-color: transparent;
+        
+    }
+
+
+
+    input[type=tel]:focus{
+        font-size: 15px;
+        outline: none;
+        color: red;
+    
+        }
+
+
+        /* here is my date design */
+        input[type=date]{
+            width: 50%;
+            padding: 12px;
+            border-radius: 7px;
+            border: 2px solid gray ;
+            background-color: transparent;
+            
+        }
+
+        /* here is my file(upload credentials) design */
+        input[type=file]{
+            width: 60%;
+            padding: 12px;
+            border-radius: 7px;
+            border: 2px solid gray ;
+            background-color: transparent;
+            
+        }
+
+
+
+
+        /* here is my password design */
+        input[type=password]{
+            width: 60%;
+            padding: 12px;
+            border-radius: 7px;
+            border: 2px solid gray ;
+            background-color: transparent;
+            
+        }
+    
+    
+        input[type=tel]:focus{
+            font-size: 15px;
+            outline: none;
+            color: red;
+        
+            }
+
+
+            /* here is my checkbox design */
+            /* input[type=checkbox]{
+                border: 2px solid gray ;
+                
+            } */
+
+            .check{
+                padding: 10px;
+            }
+
+
+            /* here is my select button design */
+            select{
+                width: 50%;
+                padding: 15px;
+                border-radius: 7px;
+                border: 2px solid gray;
+                font-size: 15px;
+                background-color: transparent;
+                color: black;
+            }
+
+
+        
+            /* designing my textarea(about you) */
+             textarea {
+                width: 70%;
+                padding: 12px;
+                border-radius: 10px;
+                border: 1px solid gray ;
+                background-color: transparent;
+            
+            }
+
+
+
+            /* Designing inside of the textarea box (i.e; focus)when it is clicked */
+            textarea:focus{
+                font-size: 15px;
+                outline: none;
+                color: red;
+            }
+            
+            
+
+            
+
+
+
+            /* designing my input type: submit and reset btn */
+                .btn{
+                    background-color: transparent;
+                    color: red;
+                    font-weight: bolder;
+                    padding: 15px;
+                    margin-bottom: 40px;
+                    margin-top: 10px;
+                    margin-right: 45px;
+                    border: 4px solid gray;
+                    border-radius: 7px;
+                    cursor: pointer;
+
+                }
+
+                .btn:focus{
+                    font-size: 15px;
+                    background-color: blue;
+                    color: white;
+                }
+                
+
+
+                /* Designing my mobile responsiveness. (max-width:>/= 470px). here is my mobile design*/
+                @media (min-width:300px) and (max-width: 900px){
+
+                    .container-form{
+                        text-align: center;
+                        max-width: 100%;
+                        margin: auto;
+                        background-size: 100% 100%;
+                     /* the background-size 100% 100%; ensure that the background image
+                    covers the entire width and height of the .container-form,
+                    without any gaps */
+                        
+                    
+                    }
+                    
+
+
+                    body{
+
+                        background-color: lightgray;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 20px;
+                    
+                    }
+
+
+                    /* styling my input types: text, tel, email, password in d media query */
+                    input[type=text]{
+                        width:80%;
+                        padding: 15px;
+                    }
+                    
+
+                    input[type=email]{
+                        width:80%;
+                        padding: 15px;
+                    }
+
+
+                    input[type=tel]{
+                        width:80%;
+                        padding: 15px;
+                    }
+
+
+                    input[type=password]{
+                        width:80%;
+                        padding: 15px;
+                    }
+
+
+                    /* designing date of birth */
+                    input[type=date]{
+                        width:80%;
+                        padding: 15px;
+                        font-size: 18px;
+        
+                    }
+
+
+                    /* desiging file(upload credentials) */
+
+                    input[type=file]{
+                        width:80%;
+                        padding: 15px;
+                        font-size: 18px;
+        
+                    }
+                    
+
+                    
+
+                    /* here is the style of my .check  (that is working on the label of marital status) */
+
+                    .check{
+                        padding: 5px;
+                    }
+
+
+                    /* here is styling the select button of state of origin and qualification */
+                    
+                     select{
+                         width: 70%;
+                        padding: 20px;
+                        font-size: 18px;
+                    }
+
+
+                    /* designing my input type: submit and reset btn */
+                .btn{
+                    margin-right: 30px;
+
+                }
+
+
+
+                }

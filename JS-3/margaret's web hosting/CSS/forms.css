@@ -1,0 +1,72 @@
+.personal-info{
+font-size: 20px;
+font-weight: bold;
+font-style: italic;
+text-decoration: underline;
+/* text-align: center; */
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+img{
+    padding-left: 10px;
+}
+
+
+
+/* styling my input text */
+input[type=text] {
+    width: 40%;
+    display: block;
+    margin-bottom: 5px;
+    background-color: aliceblue;
+    color: rgb(86, 25, 143);
+    padding: 10px;
+    /* padding of the box for response 10px */
+    margin-left: 20%;
+    /* margin-left helps me align the box to the left with the input=text */
+    box-sizing: border-box;
+    /* i used border-box to size my box to ensure d padding and border are included in the total width and heigh of the element used here */
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    /* font-weight is for the inputed information */
+}
+
+
+input[type=submit] {
+    background-color: blue;
+    border: solid;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding:15px 16px;
+    margin: 15px 3px;
+    cursor: pointer;
+}
+
+
+/* designing my p options to be bold (e.g language proficiency, religion, gender) */
+p{
+    font-weight: bold;
+}
+
+
+/* adding image as the background image and making it fixed */
+body{
+    background-image: url("../Images/Segmentation_1@2x.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Making my label form of the text, checkbox and radio to be bold */
+form label{
+    font-weight: bold;
+    /* font-size: 17px; */
+}

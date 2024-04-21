@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margaret's form</title>
+
+    <link rel="stylesheet" href="newforms.css">
+
+</head>
+
+
+<body>
+
+    <div class="container-form">
+
+    <form action="" method="post">
+    <!-- form action specifies where d form will be sent to while method specifies how it will be sent -->
+    <!-- By default, forms have autocomplete on, it can be put off when added to the form (e.g:<form action="" method="post" autocomplete="off> -->
+    
+
+        <fieldset>
+    <!-- fieldset helps one divide the form into sections/box, while legend gives more info about it(e.g: personal info) -->
+
+
+    <legend>Personal information:</legend>
+    <label for="">Full name:</label> <br>
+    <input type="text" name="full name" id="" placeholder="Enter fullname"> <br> <br>
+
+    <label for="">Email:</label> <br>
+    <input type="email" name="email" id="" placeholder="Enter email here"> <br><br>
+
+    <label for="">Phone number:</label> <br>
+    <input type="tel" name="phone number" id="" placeholder="Enter phone number"> <br><br>
+    <!-- someone can use input type: number, it just gives a scroll button to add numbers, recently, 'tel' is used -->
+    <!-- by default, forms have autocomplete on(it helps to bring back d previously inputed value) -->
+
+
+
+    <label for="">Username:</label> <br>
+    <input type="text" name="" id="" placeholder="Enter username">  <br><br>
+
+</fieldset>
+
+    <!-- we can add readonly to make d section not to be editable but only to be read. <br>
+     e.g:  <input type="text" name="" id="" placeholder="Enter username" readonly>  -->
+
+    <label for="">Password:</label> <br>
+    <input type="password" name="" id="" placeholder="Enter password" maxlength="12"> <br><br>
+    <!-- "maxlength" here specifies d highest character that can be contained in the data form (vice-versa with minlength)-->
+
+    <p>Are you obidient?</p>
+    <label for="" class="check">Yes</label> 
+    <input type="checkbox" name="" id="" value="Yes">
+
+
+    <label for="" class="check">No</label>
+    <input type="checkbox" name="" id="" value="No">
+    
+
+
+
+    <!-- my example of radio: ticks only one --> 
+    <p>Gender</p>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="" value="male"> 
+
+
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="" value="female">  <br> <br>
+
+
+    <p>Marital staus:</p>
+    <label for="single" class="check">Single</label>
+    <input type="radio" name="marital status" id="" value="single">
+
+    <label for="married" class="check">Married</label>
+    <input type="radio" name="marital status" id="" value=""> 
+    
+    <label for="divorced" class="check">Divorced</label>
+    <input type="radio" name="marital status" id="" value="">
+    <br><br>
+    <!-- I noticed that using same "name" as the label for as well as "value", still picks both/all d options, but using d same name as <p></p> makes it choose only one option e.g using marital status-->
+
+    
+
+
+
+   <!-- select brings a box which help one choose from various options;single selection. (select has attribute "size" which  determines the number of option to display/that will be visible) br
+    in reality, size determine how many options that will be viewed at once in the option bar-->
+  
+    <label for="" class="state">State of Origin:</label> <br><br>
+   <select name="" id="" size="">
+
+    <option value=""> Choose state</option>
+    <option value=""> Lagos</option>
+    <option value=""> Abia</option>
+    <option value=""> Imo</option>
+    <option value=""> Ogun</option>
+    <option value=""> Rivers</option>
+    <option value=""> Anambra</option>
+    <option value=""> Delta</option>
+    <option value=""> Kaduna</option>
+    <option value=""> Abuja</option>
+
+    </select> <br> <br>
+
+
+    <!-- using select for multiple selection -->
+    <label for="" class="state">Qualification:</label> <br><br>
+    <select name="" id="" multiple>
+ 
+     <option value=""> Choose qualification</option>
+     <option value=""> FSLC</option>
+     <option value=""> SSCE</option>
+     <option value=""> ND</option>
+     <option value=""> NCE</option>
+     <option value=""> HND</option>
+     <option value=""> B.Sc/B.Sc(Ed)</option>
+     <option value=""> M.Sc</option>
+     <option value=""> PhD</option>
+    </select>
+     <br><br>
+
+
+
+    <label for="">Date of birth:</label> <br><br>
+    <input type="date" name="" id="" required> <br> <br>
+    <!-- "required" here means the form cannot be submitted without d needed information of where its placed; i.e, it must be filled. -->
+
+
+
+    <label for="">Upload credentials:</label> <br> <br>
+    <input type="file" name="files" id=""> <br><br>
+
+
+    <!-- adding <textarea (about u was beneath d textarea box until i added d breaks, then it came upward)-->
+    <label for="">About you:</label> <br> <br>
+    <textarea name="" id="" cols="100" rows="20"></textarea> <br><br>
+
+    
+    <input type="submit" value="Register" class="btn">
+    <input type="reset" value="Reset" class="btn">
+
+    
+
+    </form>
+    
+</div>
+
+</body>
+
+</html>
